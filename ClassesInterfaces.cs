@@ -2,7 +2,7 @@ using System;
 
 public class Point
 {
-    public double X;
+    	public double X;
 	public double Y;
 	public override string ToString()
 	{
@@ -64,14 +64,14 @@ public class Program
 	{
 		Console.WriteLine("Hello World");
 		var ints = new[] { 1, 2 };
-	    var strings = new[] { "A", "B" };
+	    	var strings = new[] { "A", "B" };
 
-	    Print(Combine(ints, ints));
-	    Print(Combine(ints, ints, ints));
-	    Print(Combine(ints));
-	    Print(Combine());
-	    Print(Combine(strings, strings));
-	    Print(Combine(ints, strings));
+	   	Print(Combine(ints, ints));
+	    	Print(Combine(ints, ints, ints));
+	    	Print(Combine(ints));
+	    	Print(Combine());
+	    	Print(Combine(strings, strings));
+	    	Print(Combine(ints, strings));
 		
 		
 		Console.WriteLine(MiddleOfThree(2, 5, 4));
@@ -84,8 +84,8 @@ public class Program
 		
 		//Console.WriteLine(Min(2,4,10,151,5));
 	    
-	    Console.WriteLine(Min(new[] { "B", "A", "C", "D" }));
-	    Console.WriteLine(Min(new[] { '4', '2', '7' }));
+	    	Console.WriteLine(Min(new[] { "B", "A", "C", "D" }));
+	    	Console.WriteLine(Min(new[] { '4', '2', '7' }));
 		
 	
 	}
