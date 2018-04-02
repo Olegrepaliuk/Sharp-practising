@@ -42,4 +42,24 @@
 					yield break;
 			}
 		}
+
+		public static int[] ParseNumbers(IEnumerable<string> lines)
+		{
+			return lines
+				.Where(s => !string.IsNullOrEmpty(s))
+				.Select(s => int.Parse(s))
+				.ToArray();
+		}
+
+		public static List<Point> ParsePoints(IEnumerable<string> lines)
+		{
+			return lines
+				.Select(z => z.Split())
+				.Select(z => z
+						.Select(x => int.Parse(x))
+						.ToArray()
+						)
+				.Select(z => new Point(z[0], z[1]))
+				.ToList();
+		}
 	}
